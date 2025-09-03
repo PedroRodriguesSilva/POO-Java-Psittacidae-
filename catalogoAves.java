@@ -1,17 +1,44 @@
 public class catalogoAves {
     public static void main(String[] args) {
-        // Criando um objeto da classe Psittacidae
+
         psittacidae arara = new psittacidae(
-                "Ara ararauna",   // espécie
-                "Azul e Amarelo",// cor principal
-                120.0,           // envergadura em cm
-                1.2              // peso em kg
+                "Ara ararauna",
+                "Azul e Amarelo",
+                120.0,
+                1.2
         );
 
-        // Chamando os métodos
+
+        psittacidae papagaio = new psittacidae(
+                "Amazona aestiva",
+                "Verde",
+                40.0,
+                0.4
+        );
+
+
+        psittacidae cacatua = new psittacidae(
+                "Cacatua galerita",
+                "Branco com Crista Amarela",
+                100.0,
+                0.9
+        );
+
+
         arara.mostrarInfo();
         arara.voar();
-        arara.emitirSom();
-        arara.comer("sementes");
+        arara.comer("frutas");
+
+        System.out.println("-----------");
+
+        papagaio.mostrarInfo();
+        papagaio.emitirSom();
+        papagaio.comer("sementes");
+
+        System.out.println("-----------");
+
+        cacatua.mostrarInfo();
+        cacatua.voar();
+        cacatua.emitirSom();
     }
 }
